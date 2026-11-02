@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillNest Academy — Digital Skills Bootcamp</title>
+<meta name="description" content="Join SkillNest Academy's hands-on online bootcamp and learn the tools, workflows, and creative thinking needed for modern work.">
+<meta name="theme-color" content="#0B1330">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" data-header>
+  <div class="container nav-bar">
+    <a class="brand" href="#home" aria-label="SkillNest Academy — back to top">
+      <img src="assets/logo.png" alt="SkillNest Academy" width="702" height="215">
+    </a>
+    <nav class="nav-links" id="site-nav" aria-label="Primary" data-nav>
+      <ul>
+        <li><a href="#home" data-link="home">Home</a></li>
+        <li><a href="#courses" data-link="courses">Courses</a></li>
+        <li><a href="#why" data-link="why">Why SkillNest</a></li>
+        <li><a href="#how" data-link="how">How It Works</a></li>
+        <li><a href="#faq" data-link="faq">FAQs</a></li>
+      </ul>
+      <button type="button" class="btn btn-primary nav-cta-mobile" data-open-register>Register Now</button>
+    </nav>
+    <button type="button" class="btn btn-primary nav-cta" data-open-register>Register Now</button>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-menu-toggle>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-hero="1">Digital Skills Bootcamp</p>
+      <h1 id="hero-title" data-split>Build practical digital skills for your next career move</h1>
+      <p class="lead" data-hero="2">Join SkillNest Academy's hands-on online bootcamp and learn the tools, workflows, and creative thinking needed for modern work.</p>
+      <div class="hero-actions" data-hero="3">
+        <button type="button" class="btn btn-primary btn-lg" data-open-register>Register Now</button>
+        <a class="btn btn-secondary btn-lg" href="#courses">Explore Courses <svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <ul class="trust-points" data-hero="4">
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="url(#g-check)"/><path d="m6 10.3 2.7 2.7L14 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4-week practical bootcamp</li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="url(#g-check)"/><path d="m6 10.3 2.7 2.7L14 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Live instructor support</li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="url(#g-check)"/><path d="m6 10.3 2.7 2.7L14 7.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Beginner-friendly lessons</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" data-hero-visual>
+      <div class="hero-media">
+        <!-- Poster / fallback image. Shown whenever no video source is added, when the video is
+             still loading, and for visitors who prefer reduced motion. -->
+        <img class="hero-poster" src="assets/hero-poster.webp" alt="A learner smiling while working on a laptop in a bright SkillNest Academy study space" width="1100" height="931" fetchpriority="high">
+        <!-- HERO VIDEO SLOT ────────────────────────────────────────────────
+             No video file was supplied with the project, so none is referenced.
+             To enable it, export a short looping clip (MP4 H.264 + WebM, ≤ 4 MB, 16:14 or wider)
+             and add the sources below, e.g.
+               <source src="assets/video/hero.webm" type="video/webm">
+               <source src="assets/video/hero.mp4"  type="video/mp4">
+             The script plays it automatically (muted, looped, inline) and fades the poster out. -->
+        <video class="hero-video" muted loop playsinline preload="metadata" poster="assets/hero-poster.webp" aria-hidden="true" tabindex="-1" data-hero-video></video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="float-badge badge-a" aria-hidden="true">
+        <span class="badge-dot"></span><span><strong>Live</strong> instructor support</span>
+      </div>
+      <div class="float-badge badge-b" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Beginner-friendly</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-labelledby="trust-title">
+  <div class="container">
+    <h2 id="trust-title" class="trust-title" data-reveal>Trusted by learners, graduates, and growing teams</h2>
+    <ul class="trust-row" data-reveal-group>
+      <li style="--i:0"><span>Partner logo</span></li>
+      <li style="--i:1"><span>Partner logo</span></li>
+      <li style="--i:2"><span>Partner logo</span></li>
+      <li style="--i:3"><span>Partner logo</span></li>
+      <li style="--i:4"><span>Partner logo</span></li>
+    </ul>
+    <p class="placeholder-note">Placeholder row — add approved partner or community logos here.</p>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="section section-soft" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <h2 id="why-title">Learn with structure, support, and real outcomes</h2>
+      <p>SkillNest Academy is designed to help learners move from scattered tutorials to guided, practical progress.</p>
+    </header>
+    <ul class="grid grid-4 benefit-grid" data-reveal-group>
+      <li class="card benefit" style="--i:0">
+        <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-4.5L21 9l-9 4.5L3 9Z"/><path d="M7 11.2v4.3c0 1.2 2.2 2.5 5 2.5s5-1.3 5-2.5v-4.3"/><path d="M21 9v5"/></svg></span>
+        <h3>Expert-led learning</h3>
+        <p>Learn from guided lessons designed to make complex topics easier to understand.</p>
+      </li>
+      <li class="card benefit" style="--i:1">
+        <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.5 8-4 4 4 4"/><path d="m15.5 8 4 4-4 4"/><path d="m13.5 5-3 14"/></svg></span>
+        <h3>Hands-on projects</h3>
+        <p>Build practical work samples that help you apply what you learn.</p>
+      </li>
+      <li class="card benefit" style="--i:2">
+        <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5S9.600 5.900 12 3.500Z"/></svg></span>
+        <h3>Flexible online access</h3>
+        <p>Study from anywhere with a structure that fits your schedule.</p>
+      </li>
+      <li class="card benefit" style="--i:3">
+        <span class="icon-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 5-5 3.5 3.5L20 7"/><path d="M14.500 7H20v5.500"/></svg></span>
+        <h3>Career-focused support</h3>
+        <p>Gain confidence through learning paths, progress tracking, and practical guidance.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FEATURED COURSES ============ -->
+<section class="section" id="courses" aria-labelledby="courses-title">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <h2 id="courses-title">Pick a pathway and start building</h2>
+      <p>Four beginner-friendly courses, each structured over 4 weeks.</p>
+    </header>
+    <ul class="grid grid-4 course-grid" data-reveal-group>
+      <li class="course" style="--i:0">
+        <a class="course-link" href="#register" data-open-register data-course="Digital Marketing Foundations" aria-label="Explore Course: Digital Marketing Foundations">
+          <div class="course-img"><img src="assets/course-marketing.webp" alt="" width="800" height="500" loading="lazy"></div>
+          <div class="course-body">
+            <p class="meta"><span class="pill pill-purple">4 weeks</span><span class="pill pill-blue">Beginner</span></p>
+            <h3>Digital Marketing Foundations</h3>
+            <p>Learn campaign planning, content basics, analytics, and digital channel strategy.</p>
+            <span class="text-link">Explore Course <svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </li>
+      <li class="course" style="--i:1">
+        <a class="course-link" href="#register" data-open-register data-course="UI/UX Design Fundamentals" aria-label="Explore Course: UI/UX Design Fundamentals">
+          <div class="course-img"><img src="assets/course-uiux.webp" alt="" width="800" height="500" loading="lazy"></div>
+          <div class="course-body">
+            <p class="meta"><span class="pill pill-purple">4 weeks</span><span class="pill pill-blue">Beginner</span></p>
+            <h3>UI/UX Design Fundamentals</h3>
+            <p>Understand layout, wireframes, visual hierarchy, and user-focused interface design.</p>
+            <span class="text-link">Explore Course <svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </li>
+      <li class="course" style="--i:2">
+        <a class="course-link" href="#register" data-open-register data-course="Data Skills Basics" aria-label="Explore Course: Data Skills Basics">
+          <div class="course-img"><img src="assets/course-data.webp" alt="" width="800" height="500" loading="lazy"></div>
+          <div class="course-body">
+            <p class="meta"><span class="pill pill-purple">4 weeks</span><span class="pill pill-blue">Beginner</span></p>
+            <h3>Data Skills Basics</h3>
+            <p>Build confidence with spreadsheets, dashboards, data interpretation, and reporting.</p>
+            <span class="text-link">Explore Course <svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </li>
+      <li class="course" style="--i:3">
+        <a class="course-link" href="#register" data-open-register data-course="Web Development Starter" aria-label="Explore Course: Web Development Starter">
+          <div class="course-img"><img src="assets/course-web.webp" alt="" width="800" height="500" loading="lazy"></div>
+          <div class="course-body">
+            <p class="meta"><span class="pill pill-purple">4 weeks</span><span class="pill pill-blue">Beginner</span></p>
+            <h3>Web Development Starter</h3>
+            <p>Learn the basics of HTML, CSS, page structure, and responsive web thinking.</p>
+            <span class="text-link">Explore Course <svg class="arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section-lavender" id="how" aria-labelledby="how-title">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <h2 id="how-title">Your learning journey, made simple.</h2>
+    </header>
+    <ol class="steps" data-steps>
+      <li class="step" style="--i:0">
+        <span class="step-num" aria-hidden="true">1</span>
+        <div class="card step-card"><h3>Choose your pathway</h3><p>Select the learning track that matches your goals and starting point.</p></div>
+      </li>
+      <li class="step" style="--i:1">
+        <span class="step-num" aria-hidden="true">2</span>
+        <div class="card step-card"><h3>Learn with guided lessons</h3><p>Follow structured lessons, examples, and practical exercises.</p></div>
+      </li>
+      <li class="step" style="--i:2">
+        <span class="step-num" aria-hidden="true">3</span>
+        <div class="card step-card"><h3>Build real projects</h3><p>Apply your skills through hands-on tasks and portfolio-friendly work.</p></div>
+      </li>
+      <li class="step" style="--i:3">
+        <span class="step-num" aria-hidden="true">4</span>
+        <div class="card step-card"><h3>Track your progress</h3><p>Review your growth, milestones, and next steps as you learn.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ OUTCOMES / STATS ============ -->
+<section class="stats" aria-labelledby="stats-title">
+  <div class="container">
+    <h2 id="stats-title" class="stats-title" data-reveal>Outcomes that keep learners moving</h2>
+    <ul class="stat-grid" data-reveal-group>
+      <li class="stat" style="--i:0"><strong class="stat-value" data-count="25" data-suffix="K+">25K+</strong><span>Learners enrolled</span></li>
+      <li class="stat" style="--i:1"><strong class="stat-value" data-count="350" data-suffix="+">350+</strong><span>Expert-led lessons</span></li>
+      <li class="stat" style="--i:2"><strong class="stat-value" data-count="98" data-suffix="%">98%</strong><span>Learner satisfaction</span></li>
+      <li class="stat" style="--i:3"><strong class="stat-value" data-count="15" data-suffix="+">15+</strong><span>Career-focused pathways</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" aria-labelledby="voices-title">
+  <div class="container">
+    <header class="section-head" data-reveal>
+      <h2 id="voices-title">What learners say about SkillNest</h2>
+    </header>
+    <ul class="grid grid-3 quote-grid" data-reveal-group>
+      <li class="card quote" style="--i:0">
+        <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V14.400C0 6 4.800.8 12 0l1 3.600C9.200 4.600 7.400 6.800 7.200 10H13v14H0Zm19 0V14.400C19 6 23.800.8 31 0l1 3.600c-3.800 1-5.600 3.200-5.800 6.400H32v14H19Z" fill="currentColor"/></svg>
+        <blockquote><p>SkillNest helped me turn scattered learning into a clear path. The lessons were practical, focused, and easy to follow.</p></blockquote>
+        <figcaption class="person"><span class="avatar" aria-hidden="true">AP</span><span><strong>Ananya Patel</strong><small>Product design learner</small></span></figcaption>
+      </li>
+      <li class="card quote" style="--i:1">
+        <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V14.400C0 6 4.800.8 12 0l1 3.600C9.200 4.600 7.400 6.800 7.200 10H13v14H0Zm19 0V14.400C19 6 23.800.8 31 0l1 3.600c-3.800 1-5.600 3.200-5.800 6.400H32v14H19Z" fill="currentColor"/></svg>
+        <blockquote><p>The course structure made it easier to stay consistent and build confidence with real tasks.</p></blockquote>
+        <figcaption class="person"><span class="avatar" aria-hidden="true">OK</span><span><strong>Omar Khan</strong><small>Junior marketing executive</small></span></figcaption>
+      </li>
+      <li class="card quote" style="--i:2">
+        <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V14.400C0 6 4.800.8 12 0l1 3.600C9.200 4.600 7.400 6.800 7.200 10H13v14H0Zm19 0V14.400C19 6 23.800.8 31 0l1 3.600c-3.800 1-5.600 3.200-5.800 6.400H32v14H19Z" fill="currentColor"/></svg>
+        <blockquote><p>I liked that the learning felt guided, modern, and connected to the kind of work I actually want to do.</p></blockquote>
+        <figcaption class="person"><span class="avatar" aria-hidden="true">MJ</span><span><strong>Maya Johnson</strong><small>Graduate learner</small></span></figcaption>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-soft" id="faq" aria-labelledby="faq-title">
+  <div class="container container-narrow">
+    <header class="section-head" data-reveal>
+      <h2 id="faq-title">Frequently asked questions</h2>
+    </header>
+    <div class="faq" data-faq data-reveal>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="true" aria-controls="faq-a1" id="faq-q1"><span>Who is SkillNest Academy for?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>SkillNest is for students, graduates, and early-career professionals who want to build practical digital skills.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Do I need previous experience?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>No. The bootcamp is designed to be beginner-friendly while still focused on practical outcomes.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>How long is the bootcamp?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>The featured bootcamp is structured over 4 weeks.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>Will I build real projects?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>Yes. The learning experience includes practical tasks designed to help you apply your skills.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>Is the program online?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Yes. SkillNest is designed for flexible online learning with guided support.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a6" id="faq-q6"><span>What happens after I register?</span><span class="faq-icon" aria-hidden="true"></span></button></h3>
+        <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div><p>You will receive details about your selected course pathway, schedule, and next steps.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-banner" data-reveal>
+      <div class="cta-copy">
+        <h2 id="cta-title">Ready to build skills that move you forward?</h2>
+        <p>Join SkillNest Academy and start learning with structure, support, and practical outcomes.</p>
+        <button type="button" class="btn btn-light btn-lg" data-open-register>Register Now</button>
+      </div>
+      <div class="cta-img"><img src="assets/cta-group.webp" alt="Four learners collaborating around a laptop" width="1200" height="675" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid" data-reveal-group>
+    <div class="footer-brand" style="--i:0">
+      <a class="footer-logo" href="#home" aria-label="SkillNest Academy — back to top"><img src="assets/logo.png" alt="SkillNest Academy" width="702" height="215" loading="lazy"></a>
+      <p>Practical, career-focused digital skills for students, graduates, and early-career professionals.</p>
+      <ul class="social" aria-label="Social media (placeholders)">
+        <li><span class="social-ph" title="Social link placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.500 9.500v8M6.500 6.200v.1M10.500 17.500v-8m0 3c0-2 1.300-3 3-3s2.500 1 2.500 3v5"/></svg><span class="sr-only">LinkedIn placeholder</span></span></li>
+        <li><span class="social-ph" title="Social link placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.500 20v-7h2.500l.5-3h-3V8.500c0-1 .5-1.500 1.500-1.500h1.700V4.300A16 16 0 0 0 14.300 4C12 4 10.500 5.400 10.500 8v2H8v3h2.500v7"/></svg><span class="sr-only">Facebook placeholder</span></span></li>
+        <li><span class="social-ph" title="Social link placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.600"/><path d="M16.800 7.200v.1"/></svg><span class="sr-only">Instagram placeholder</span></span></li>
+        <li><span class="social-ph" title="Social link placeholder"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="m10.500 9.500 4 2.500-4 2.500Z"/></svg><span class="sr-only">YouTube placeholder</span></span></li>
+      </ul>
+    </div>
+    <nav class="footer-col" style="--i:1" aria-label="Footer navigation">
+      <h2>Navigation</h2>
+      <ul><li><a href="#home">Home</a></li><li><a href="#courses">Courses</a></li><li><a href="#why">Why SkillNest</a></li><li><a href="#how">How It Works</a></li><li><a href="#faq">FAQs</a></li></ul>
+    </nav>
+    <nav class="footer-col" style="--i:2" aria-label="Courses">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="#courses">Digital Marketing Foundations</a></li>
+        <li><a href="#courses">UI/UX Design Fundamentals</a></li>
+        <li><a href="#courses">Data Skills Basics</a></li>
+        <li><a href="#courses">Web Development Starter</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col" style="--i:3">
+      <h2>Contact</h2>
+      <ul class="muted"><li>Email address — to be added</li><li>Phone number — to be added</li><li>Address — to be added</li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 SkillNest Academy. All rights reserved.</p>
+    <ul>
+      <li><a href="#" data-placeholder>Privacy Policy</a></li>
+      <li><a href="#" data-placeholder>Terms and Conditions</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ============ REGISTRATION DIALOG (front-end demo only) ============ -->
+<dialog class="modal" id="register" aria-labelledby="reg-title" data-modal>
+  <div class="modal-card">
+    <button type="button" class="modal-close" aria-label="Close registration form" data-close-register>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div data-form-view>
+      <h2 id="reg-title">Register for the bootcamp</h2>
+      <p class="modal-sub">Tell us a little about yourself and choose a course.</p>
+      <p class="demo-note" role="note">Front-end demo: nothing is sent or stored. Connect a backend before collecting real registrations.</p>
+      <form novalidate data-form>
+        <div class="field">
+          <label for="f-name">Full Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="f-name-err" placeholder="Enter your full name">
+          <p class="field-err" id="f-name-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-email">Email Address</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err" placeholder="you@example.com">
+          <p class="field-err" id="f-email-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone Number</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-phone-err" placeholder="Enter your phone number">
+          <p class="field-err" id="f-phone-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-course">Select Course</label>
+          <div class="select-wrap">
+            <select id="f-course" name="course" required aria-describedby="f-course-err">
+              <option value="">Choose a course</option>
+              <option>Digital Marketing Foundations</option>
+              <option>UI/UX Design Fundamentals</option>
+              <option>Data Skills Basics</option>
+              <option>Web Development Starter</option>
+            </select>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p class="field-err" id="f-course-err" role="alert"></p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
+      </form>
+    </div>
+    <div class="success" data-success hidden tabindex="-1">
+      <span class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5.500 12.500 4.500 4.500 8.500-9.500" fill="none" stroke="currentColor" stroke-width="2.600" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <h2>Registration received</h2>
+      <p>You will receive details about your selected course pathway, schedule, and next steps.</p>
+      <p class="demo-note">Demo confirmation only — no data was sent or stored.</p>
+      <button type="button" class="btn btn-primary" data-close-register>Back to the page</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- shared gradient for check icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="g-check" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06B6D4"/><stop offset="1" stop-color="#2563FF"/></linearGradient></defs></svg>
+
+<script src="script.js" defer></script>
+</body>
+</html>
